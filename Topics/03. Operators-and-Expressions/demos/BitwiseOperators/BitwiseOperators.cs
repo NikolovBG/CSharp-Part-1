@@ -34,7 +34,8 @@ class BitwiseOperators
 		int result = n & mask;      // 00000000 00000011
 		Console.WriteLine(result);  // 3
 		Console.WriteLine(Convert.ToString(result, 2).PadLeft(32, '0'));
-
+		
+		// Set the bit at position p to 1 in a number n
 		p = 4;
 		n = 35;                     // 00000000 00100011
 		mask = 1 << p;              // 00000000 00010000
